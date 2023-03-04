@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.layout {
+    position: absolute;
+    right: 3%; ;
+    bottom: 3%;
+    background-color: #A98769;
+    padding: 25px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+}
+
+.icon i {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+}
+
+.fa-minus::before {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: -13px;
+    width: 100%;
+    transition: .5s;
+    font-size: 30px;
+}
+
+.fa-chevron-up::before {
+    content: '';
+    position: absolute;
+    right: -13px;
+    bottom: -16px;
+    font-size: 0px;
+    transition: .5s;
+
+}
+
+.layout:hover .fa-minus::before {
+    font-size: 0;
+}
+
+.layout:hover .fa-chevron-up::before {
+    font-size: 30px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+header a {
+    color: #fff;
+    position: relative;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.fa-solid {
+    margin-right: -14px;
+}
+
+header sup {
+    font-weight: 100;
+}
+
+header a::before {
+    content: ' ';
+    position: absolute;
+    background-color: #fff;
+    transition: .7s;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+}
+
+header a:hover::before {
+    width: 100%;
+    color: #fff;
+}
+
+header i:hover {
+    color: gray;
+}
+
+.main {
+    line-height: 26px;
+    position: relative;
+    height: 80vh;
+}
+
+.centertext {
+    position: absolute;
+    text-align: center;
+    max-width: 600px;
+    left: 35%;
+    top: 22%;
+}
+
+.centertext h2 {
+    font-weight: 100;
+    color: #262626;
+    margin-bottom: 20px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.centertext h6 {
+    color: rgb(92, 91, 91);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.55em;
+    font-weight: 100;
+}
+
+.boxes {
+    position: absolute;
+    left: 18%;
+    top: 51%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.box {
+    margin-left: 55px;
+}
+
+.box img {
+    cursor: pointer;
+}
+
+.box a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 12px;
+    transition: .5s;
+}
+
+.box a:hover {
+    color: #A98769;
+}
+
+.box p {
+    font-size: 15px;
+    max-width: 260px;
+    color: gray;
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.centertext1 {
+    text-align: center;
+    max-width: 600px;
+    left: 33%;
+    top: 13%;
+    position: absolute;
+    font-family: Marcellus, sans-serif;
+    font-weight: 400;
+}
+
+.centertext1 img {
+    margin-bottom: 15px;
+}
+
+.centertext1 h2 {
+    font-weight: 100;
+    color: #262626;
+    margin-bottom: 20px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.centertext1 h6 {
+    color: rgb(92, 91, 91);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.55em;
+    font-weight: 100;
+}
+
+.boxes1 {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 42%;
+}
+
+.box1 a {
+    z-index: 4;
+    color: rgb(59, 18, 18);
+    font-family: Marcellus, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom:12px;
+    transition: .5s;
+}
+
+.box1 {
+    margin-left: 30px;
+}
+
+.box1 img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.box1 p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
+}
+
+.box1 a:hover{
+    color: #BE9D8D;
+}
+
+.text1 span{
+    display: block;
+    font-size: 12px;
+    color: #262626;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 13px;
+    letter-spacing: 1.5px;
+    transition: .7s;
+}
+
+
+.text1 span:hover{
+    color: #BE9D8D;
+    letter-spacing: 3px;
+}
+
+.main2 {
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+.centertext2 {
+    text-align: center;
+    max-width: 600px;
+    left: 34%;
+    top: 15%;
+    position: absolute;
+    font-family: Marcellus, sans-serif;
+    font-weight: 400;
+}
+
+.centertext2 img {
+    margin-bottom: 15px;
+}
+
+.centertext2 h2 {
+    font-weight: 100;
+    color: #262626;
+    margin-bottom: 20px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.centertext2 h6 {
+    color: rgb(92, 91, 91);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.55em;
+    font-weight: 100;
+}
+
+.boxes2{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 42%;
+}
+
+.box2 a {
+    z-index: 4;
+    color: rgb(59, 18, 18);
+    font-family: Marcellus, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom:12px;
+    transition: .5s;
+}
+
+.box2 {
+    margin-left: 30px;
+    position: relative;
+
+}
+
+.box2 span{
+    font-size: 18px;
+    color: #656565;
+}
+
+.box2 img {
+    width: 100%;
+    margin-bottom: 16px;
+    transition: .4s;
+}
+
+.box2 img:hover{
+    opacity: 0.55;
+}
+
+.box2 img:hover~.overlay{
+    opacity: 1;
+}
+
+.text2{
+    text-align: center;
+}
+
+.text2 a{
+transition: .5s;
+}
+
+.text2 a:hover{
+    color: #A98769;
+}
+
+.overlay a{
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #A98769;
+    padding: 20px 40px;
+    font-size: 12px;
+   position: absolute;    
+   top: 30%;
+   left: 20%;
+   opacity: 0;
+   transition: .7s;
+}
+
+
+.overlay a:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
